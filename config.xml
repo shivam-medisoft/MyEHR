@@ -99,7 +99,9 @@
     <plugin name="cordova-plugin-device" />
     <plugin name="cordova-plugin-splashscreen" />
   
-	<plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" source="npm" />
+	  <plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" source="npm" >
+        <variable  name="GOOGLE_API_KEY_FOR_ANDROID" value="{AIzaSyB0KtRgxIx932gboCTY2VUE7qCVsfHs2m0}"/>
+    </plugin>
 	
 <!--    for android--> 
 	<plugin name="cordova-plugin-badge" source="npm"  />
