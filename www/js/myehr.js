@@ -80,12 +80,18 @@ function loginmethod() {
 }
 function getHttp(path) {
                 if(localStorage.isHttp == 1){
+                    alert("in gethttp fun ishttp = 1 ");
                   if (path.indexOf("http://") < 0) {
+                      alert("path.indexOf(http://) < 0");
                     path = "http://" + path;
+                      alert(path);
                 }  
                 }else{
+                     alert("else part");
                 if (path.indexOf("https://") < 0) {
+                     alert("path.indexOf(https://) < 0");
                     path = "https://" + path;
+                     alert(path);
                 }
             }
                 return path;
