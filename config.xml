@@ -40,6 +40,7 @@
    <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
+	<preference name="AndroidPersistentFileLocation" value="Compatibility" />
      <plugin name="cordova.plugins.diagnostic" />
      <preference name="cordova.plugins.diagnostic.modules" value="LOCATION BLUETOOTH WIFI CAMERA NOTIFICATIONS MICROPHONE CONTACTS CALENDAR REMINDERS MOTION NFC EXTERNAL_STORAGE" />
     <!-- Plugins -->
@@ -129,7 +130,6 @@
     </plugin>
 <plugin name="cordova-plugin-androidx" source="npm"/>
 	<plugin name="cordova-plugin-androidx-adapter" source="npm"/>
-	<plugin name="cordova-plugin-inappbrowser-xhr-interceptor" source="npm"/>
     <!-- Plugins -->
   <platform name="android">
 	  <resource-file src="google-services.json" target="app/google-services.json" />
@@ -229,7 +229,7 @@
     <access origin="*"  />
     <!-- Added the following intents to support the removal of whitelist code from base cordova to a plugin -->
     <!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
-    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <plugin name="cordova-plugin-whitelist" source="npm"/>
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
