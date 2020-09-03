@@ -54,6 +54,7 @@ function loginmethod() {
         },
         error: function (jqXHR, exception) {
             debugger;
+            alert("URL is : " + path);
             var msg = '';
             if (jqXHR.status === 0) {
                 msg = 'Not connect to server.\n Verify Network or check url';
