@@ -38,7 +38,7 @@ function loginmethod() {
     }
     var path = loginuser;
     $.ajax({
-        url: path,
+        url: getHttp(path),
         type: "GET",
         success: function (data, textstatus, xhrreq) {
             data = data.trim();
