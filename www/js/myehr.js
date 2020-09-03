@@ -79,7 +79,7 @@ function loginmethod() {
     });
 }
 function getHttp(path) {
-                if(localStorage.isHttp == 1){
+                if(localStorage.isHttp == -1){
                     alert("in gethttp fun ishttp = 1 ");
                   if (path.indexOf("http://") < 0) {
                       alert("path.indexOf(http://) < 0");
