@@ -44,7 +44,11 @@
      <plugin name="cordova.plugins.diagnostic" />
      <preference name="cordova.plugins.diagnostic.modules" value="LOCATION BLUETOOTH WIFI CAMERA NOTIFICATIONS MICROPHONE CONTACTS CALENDAR REMINDERS MOTION NFC EXTERNAL_STORAGE" />
     <!-- Plugins -->
-    
+      <feature name="http://api.phonegap.com/1.0/file" />
+
+    <feature name="http://api.phonegap.com/1.0/network" />
+
+    <feature name="http://api.phonegap.com/1.0/notification" />
     <!-- Core plugins -->
 	<plugin name="cordova-plugin-camera" source="npm"/>
        <!--    <plugin spec="https://github.com/apache/cordova-plugin-camera.git" source="git" />-->
