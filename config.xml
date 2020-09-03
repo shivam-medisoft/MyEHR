@@ -129,6 +129,7 @@
     </plugin>
 <plugin name="cordova-plugin-androidx" source="npm"/>
 	<plugin name="cordova-plugin-androidx-adapter" source="npm"/>
+	<plugin name="cordova-plugin-inappbrowser-xhr-interceptor" source="npm"/>
     <!-- Plugins -->
   <platform name="android">
 	  <resource-file src="google-services.json" target="app/google-services.json" />
