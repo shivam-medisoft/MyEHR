@@ -131,8 +131,9 @@
 <plugin name="cordova-plugin-androidx" source="npm"/>
 	<plugin name="cordova-plugin-androidx-adapter" source="npm"/>
 	<plugin name="cordova-plugin-advanced-http" source="npm"/>
-	<plugin name="cordova-filechooser" source="npm"/>
-
+	 <!--<plugin name="cordova-filechooser" source="npm"/>
+<plugin name="cordova-gallery-access" source="npm"/>-->
+	
     <!-- Plugins -->
   <platform name="android">
 	  <resource-file src="google-services.json" target="app/google-services.json" />
