@@ -136,6 +136,28 @@
 	<plugin name="cordova-plugin-androidx-adapter" source="npm"/>
 	<plugin name="cordova-plugin-advanced-http" source="npm"/>
 	<plugin name="cordova-filechooser" source="npm"/>
+	
+	   <plugin spec="https://github.com/apache/cordova-plugin-device.git" source="git" />
+    <plugin spec="https://github.com/apache/cordova-plugin-device-motion.git" source="git" />
+    <plugin spec="https://github.com/apache/cordova-plugin-device-orientation.git" source="git" />
+    <plugin spec="https://github.com/apache/cordova-plugin-dialogs.git" source="git" />
+<!--        <plugin spec="https://github.com/apache/cordova-plugin-file.git" source="git" />
+    <plugin spec="https://github.com/apache/cordova-plugin-file-transfer.git" source="git" />-->
+    <plugin spec="https://github.com/apache/cordova-plugin-splashscreen.git" source="git" />
+    <plugin spec="https://github.com/apache/cordova-plugin-network-information.git" source="git" />
+    <plugin spec="https://github.com/salbahra/NetworkInterfacePlugin.git" source="git" />
+<!--    <plugin spec="https://github.com/katzer/cordova-plugin-printer.git" source="git" />-->
+    <plugin spec="https://github.com/rafelbev/FileOpener.git" source="git" />
+    <plugin spec="https://github.com/VitaliiBlagodir/cordova-plugin-datepicker" source="git" />
+    <plugin spec="https://github.com/Paldom/SpinnerDialog.git" source="git" />
+    <plugin spec="https://github.com/apache/cordova-plugin-inappbrowser.git" source="git" />
+    <plugin spec="https://github.com/cjpearson/cordova-plugin-keyboard" source="git" />
+ <plugin spec="https://github.com/andischerer/cordova-plugin-openfilenative.git" source="git" />
+    <plugin spec="https://github.com/apache/cordova-plugin-statusbar.git" source="git" />
+     <plugin spec="https://github.com/xmartlabs/cordova-plugin-market" source="git" />
+    <plugin spec="https://github.com/whiteoctober/cordova-plugin-app-version.git" source="git" />
+     <plugin spec="https://github.com/ihadeed/cordova-filechooser.git" source="git" />
+	
     <!-- Plugins -->
   <platform name="android">
 	  <resource-file src="google-services.json" target="app/google-services.json" />
