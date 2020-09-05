@@ -57,8 +57,6 @@
         <variable name="MICROPHONE_USAGE_DESCRIPTION" value="App would like to access the microphone." />
         <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access the library." />
     </plugin>
-    <plugin name="cordova-plugin-datepicker" source="npm" />
-    <plugin name="cordova-plugin-dialogs" source="npm"/>
 <plugin name="cordova-plugin-media-capture" source="npm"/>
     <!--    <plugin spec="https://github.com/apache/cordova-plugin-media-capture.git" source="git" />  -->
     <plugin name="cordova-plugin-media-capture" source="npm" >
@@ -68,8 +66,6 @@
     </plugin>  
      <plugin name="cordova-plugin-file" source="npm"  />
     <plugin name="cordova-plugin-file-transfer" source="npm"  />
-    <plugin name="cordova-plugin-datepicker" source="npm" />
-    <plugin name="cordova-plugin-dialogs" source="npm"/>
   
      <plugin name="cordova-plugin-geolocation" source="npm" />
      
@@ -89,20 +85,8 @@
 </edit-config>
 </platform>
  
-	<plugin name="cordova-plugin-dialogs" source="npm" />
-	<plugin name="cordova-plugin-splashscreen" source="npm" />
-    <plugin name="cordova-plugin-network-information" source="npm" />
-    <plugin name="cordova-plugin-networkinterface" source="npm" />
      <plugin name="cordova-plugin-fileviewer2" source="npm" />
-	<!-- <plugin name="cordova-plugin-vha-fileopener2" source="npm" />--> 
-     <plugin name="cordova-plugin-datepicker" source="npm" />
-    <plugin name="cordova-plugin-spinnerdialog" source="npm" />
-	
-    <plugin name="cordova-plugin-statusbar" source="npm"/>
-    <plugin name="cordova-plugin-device" source="npm"/>
-    <plugin name="cordova-plugin-splashscreen" source="npm"/>
-  
-	  <plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" source="npm" >
+    <plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" source="npm" >
         <variable  name="GOOGLE_API_KEY_FOR_ANDROID" value="{AIzaSyBp582ltJsDK7AM4XM3isxdgnvBTx5tn8w}"/>
     </plugin> 
 	
@@ -110,16 +94,8 @@
 	<plugin name="cordova-plugin-badge" source="npm"  />
   <plugin name="cordova-plugin-phonedialer" source="npm" />
     <plugin name="cordova-plugin-x-socialsharing" source="npm" />
-    <plugin name="cordova-plugin-fileopener" source="npm" />
-       <plugin name="cordova-plugin-whitelist" source="npm" />
-    <plugin name = "cordova-plugin-inappbrowser" source="npm" />
     <plugin name= "cordova-plugin-print-pdf" source="npm"/>
 	
-	<plugin name= "cordova-plugin-market" source="npm"/>
-	<plugin name= "cordova-plugin-app-version" source="npm"/>
-	<plugin name= "cordova-plugin-keyboard" source="npm"/>
-	<plugin name= "cordova-plugin-openfilenative" source="npm"/>
-	<plugin name= "cordova-plugin-statusbar" source="npm"/>
     
  <plugin name="phonegap-plugin-push" spec="~1.10.0">
         <variable name="SENDER_ID" value="1:165870326014:android:e6f3af49d36e476c" />
@@ -128,11 +104,24 @@
 	<plugin name="cordova-plugin-androidx-adapter" source="npm"/>
 	<plugin name="cordova-plugin-advanced-http" source="npm"/>
 	<plugin name="cordova-filechooser" spec="https://github.com/ihadeed/cordova-filechooser.git" source="git" />
-  <!-- <plugin name="cordova-filechooser" source="npm"/>
-<plugin name="openpdfviewer" source="npm"/>
-	<plugin name="cordova-plugin-document-viewer" source="npm"/>
-	<plugin name="cordova-plugin-openfilenative" source="npm"/>
-	-->
+  
+	 <plugin name="cordova-plugin-device" spec="https://github.com/apache/cordova-plugin-device.git" source="git" />
+    <plugin name="cordova-plugin-device-motion" spec="https://github.com/apache/cordova-plugin-device-motion.git" source="git" />
+    <plugin name="cordova-plugin-device-orientation" spec="https://github.com/apache/cordova-plugin-device-orientation.git" source="git" />
+    <plugin name="cordova-plugin-dialogs" spec="https://github.com/apache/cordova-plugin-dialogs.git" source="git" />
+    <plugin name="cordova-plugin-splashscreen" spec="https://github.com/apache/cordova-plugin-splashscreen.git" source="git" />
+    <plugin name="cordova-plugin-network-information" spec="https://github.com/apache/cordova-plugin-network-information.git" source="git" />
+    <plugin name="NetworkInterfacePlugin" spec="https://github.com/salbahra/NetworkInterfacePlugin.git" source="git" />
+    <plugin name="FileOpener" spec="https://github.com/rafelbev/FileOpener.git" source="git" />
+    <plugin name="cordova-plugin-datepicker" spec="https://github.com/VitaliiBlagodir/cordova-plugin-datepicker" source="git" />
+    <plugin name="SpinnerDialog" spec="https://github.com/Paldom/SpinnerDialog.git" source="git" />
+    <plugin name="cordova-plugin-inappbrowser" spec="https://github.com/apache/cordova-plugin-inappbrowser.git" source="git" />
+    <plugin name="cordova-plugin-keyboard" spec="https://github.com/cjpearson/cordova-plugin-keyboard" source="git" />
+    <plugin name="cordova-plugin-openfilenative" spec="https://github.com/andischerer/cordova-plugin-openfilenative.git" source="git" />
+    <plugin name="cordova-plugin-statusbar" spec="https://github.com/apache/cordova-plugin-statusbar.git" source="git" />
+    <plugin name="cordova-plugin-market" spec="https://github.com/xmartlabs/cordova-plugin-market" source="git" />
+    <plugin name="cordova-plugin-app-version" spec="https://github.com/whiteoctober/cordova-plugin-app-version.git" source="git" />
+	
     <!-- Plugins -->
   <platform name="android">
 	  <resource-file src="google-services.json" target="app/google-services.json" />
