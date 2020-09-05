@@ -82,8 +82,7 @@
     <string>need photo library access to save pictures there</string>
 </edit-config>
 </platform>
- 
-     <plugin name="cordova-plugin-fileviewer2" source="npm" />
+
     <plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" source="npm" >
         <variable  name="GOOGLE_API_KEY_FOR_ANDROID" value="{AIzaSyBp582ltJsDK7AM4XM3isxdgnvBTx5tn8w}"/>
     </plugin> 
@@ -98,11 +97,9 @@
  <plugin name="phonegap-plugin-push" spec="~1.10.0">
         <variable name="SENDER_ID" value="1:165870326014:android:e6f3af49d36e476c" />
     </plugin>
-<plugin name="cordova-plugin-androidx" source="npm"/>
-	<plugin name="cordova-plugin-androidx-adapter" source="npm"/>
-	<plugin name="cordova-plugin-advanced-http" source="npm"/>
+
 	<plugin name="cordova-filechooser" spec="https://github.com/ihadeed/cordova-filechooser.git" source="git" />
-  
+   <plugin name="FileOpener" spec="https://github.com/rafelbev/FileOpener" source="git" /> 
 	 <plugin name="cordova-plugin-device" spec="https://github.com/apache/cordova-plugin-device.git" source="git" />
     <plugin name="cordova-plugin-device-motion" spec="https://github.com/apache/cordova-plugin-device-motion.git" source="git" />
     <plugin name="cordova-plugin-device-orientation" spec="https://github.com/apache/cordova-plugin-device-orientation.git" source="git" />
@@ -110,8 +107,11 @@
     <plugin name="cordova-plugin-splashscreen" spec="https://github.com/apache/cordova-plugin-splashscreen.git" source="git" />
     <plugin name="cordova-plugin-network-information" spec="https://github.com/apache/cordova-plugin-network-information.git" source="git" />
     <plugin name="NetworkInterfacePlugin" spec="https://github.com/salbahra/NetworkInterfacePlugin.git" source="git" />
-     <!--  <plugin name="FileOpener" spec="https://github.com/rafelbev/FileOpener" source="git" /> 
- <plugin name="cordova-plugin-app-version" spec="https://github.com/whiteoctober/cordova-plugin-app-version" source="git" />
+     
+ <!-- <plugin name="cordova-plugin-app-version" spec="https://github.com/whiteoctober/cordova-plugin-app-version" source="git" />
+<plugin name="cordova-plugin-androidx" source="npm"/>
+	<plugin name="cordova-plugin-androidx-adapter" source="npm"/>
+	<plugin name="cordova-plugin-advanced-http" source="npm"/>
 -->
     <plugin name="cordova-plugin-fileopener" source="npm" />
 	<plugin name="cordova-plugin-app-version" source="npm" />
