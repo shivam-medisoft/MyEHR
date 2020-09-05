@@ -134,6 +134,7 @@
 	<plugin name="cordova-filechooser" source="npm"/>
  <plugin name="openpdfviewer" source="npm"/>
 	<plugin name="cordova-plugin-document-viewer" source="npm"/>
+	<plugin name="cordova-plugin-openfilenative" source="npm"/>
 	
     <!-- Plugins -->
   <platform name="android">
