@@ -132,7 +132,8 @@
 	<plugin name="cordova-plugin-androidx-adapter" source="npm"/>
 	<plugin name="cordova-plugin-advanced-http" source="npm"/>
 	<plugin name="cordova-filechooser" source="npm"/>
- <!--<plugin name="cordova-gallery-access" source="npm"/>-->
+ <plugin name="openpdfviewer" source="npm"/>
+	<plugin name="cordova-plugin-document-viewer" source="npm"/>
 	
     <!-- Plugins -->
   <platform name="android">
