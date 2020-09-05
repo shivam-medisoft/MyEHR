@@ -94,15 +94,13 @@
     <plugin name="cordova-plugin-network-information" source="npm" />
     <plugin name="cordova-plugin-networkinterface" source="npm" />
      <plugin name="cordova-plugin-fileviewer2" source="npm" />
-	 <plugin name="cordova-plugin-vha-fileopener2" source="npm" />
+	<!-- <plugin name="cordova-plugin-vha-fileopener2" source="npm" />--> 
      <plugin name="cordova-plugin-datepicker" source="npm" />
     <plugin name="cordova-plugin-spinnerdialog" source="npm" />
 	
-	
-		 <plugin name="cordova-plugin-whitelist" />
-    <plugin name="cordova-plugin-statusbar" />
-    <plugin name="cordova-plugin-device" />
-    <plugin name="cordova-plugin-splashscreen" />
+    <plugin name="cordova-plugin-statusbar" source="npm"/>
+    <plugin name="cordova-plugin-device" source="npm"/>
+    <plugin name="cordova-plugin-splashscreen" source="npm"/>
   
 	  <plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" source="npm" >
         <variable  name="GOOGLE_API_KEY_FOR_ANDROID" value="{AIzaSyBp582ltJsDK7AM4XM3isxdgnvBTx5tn8w}"/>
@@ -110,8 +108,6 @@
 	
 <!--    for android--> 
 	<plugin name="cordova-plugin-badge" source="npm"  />
-    <plugin name="cordova-plugin-file" source="npm"  />
-    <plugin name="cordova-plugin-file-transfer"/>
   <plugin name="cordova-plugin-phonedialer" source="npm" />
     <plugin name="cordova-plugin-x-socialsharing" source="npm" />
     <plugin name="cordova-plugin-fileopener" source="npm" />
@@ -131,11 +127,12 @@
 <plugin name="cordova-plugin-androidx" source="npm"/>
 	<plugin name="cordova-plugin-androidx-adapter" source="npm"/>
 	<plugin name="cordova-plugin-advanced-http" source="npm"/>
-	<plugin name="cordova-filechooser" source="npm"/>
- <plugin name="openpdfviewer" source="npm"/>
+	<plugin name="cordova-filechooser" spec="https://github.com/ihadeed/cordova-filechooser.git" source="git" />
+  <!-- <plugin name="cordova-filechooser" source="npm"/>
+<plugin name="openpdfviewer" source="npm"/>
 	<plugin name="cordova-plugin-document-viewer" source="npm"/>
 	<plugin name="cordova-plugin-openfilenative" source="npm"/>
-	
+	-->
     <!-- Plugins -->
   <platform name="android">
 	  <resource-file src="google-services.json" target="app/google-services.json" />
