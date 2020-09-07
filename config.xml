@@ -110,11 +110,12 @@
      
  <!-- <plugin name="cordova-plugin-app-version" spec="https://github.com/whiteoctober/cordova-plugin-app-version" source="git" />
  <plugin name="FileOpener" spec="https://github.com/rafelbev/FileOpener" source="git" /> 
+<plugin name="FileOpener" spec="https://github.com/antonioJASR/FileOpener.git" source="git" /> 
 <plugin name="cordova-plugin-androidx" source="npm"/>
 	<plugin name="cordova-plugin-androidx-adapter" source="npm"/>
 	<plugin name="cordova-plugin-advanced-http" source="npm"/>
 -->
-	<plugin name="FileOpener" spec="https://github.com/rafelbev/FileOpener" source="git" /> 
+	
     <plugin name="cordova-plugin-fileopener" source="npm" />
 	<plugin name="cordova-plugin-app-version" source="npm" />
     <plugin name="cordova-plugin-datepicker" spec="https://github.com/VitaliiBlagodir/cordova-plugin-datepicker" source="git" />
