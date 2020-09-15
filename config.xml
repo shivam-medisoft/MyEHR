@@ -83,9 +83,7 @@
 </edit-config>
 </platform>
 
-    <plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" source="npm" >
-        <variable  name="GOOGLE_API_KEY_FOR_ANDROID" value="{AIzaSyBp582ltJsDK7AM4XM3isxdgnvBTx5tn8w}"/>
-    </plugin> 
+   
 	
 <!--    for android--> 
 	<plugin name="cordova-plugin-badge" source="npm"  />
@@ -94,9 +92,7 @@
     <plugin name= "cordova-plugin-print-pdf" source="npm"/>
 	
     
- <plugin name="phonegap-plugin-push" spec="~1.10.0">
-        <variable name="SENDER_ID" value="1:165870326014:android:e6f3af49d36e476c" />
-    </plugin>
+
 
 	<plugin name="cordova-filechooser" spec="https://github.com/ihadeed/cordova-filechooser.git" source="git" />
   
@@ -126,7 +122,12 @@
     <plugin name="cordova-plugin-statusbar" spec="https://github.com/apache/cordova-plugin-statusbar.git" source="git" />
     <plugin name="cordova-plugin-market" spec="https://github.com/xmartlabs/cordova-plugin-market" source="git" />
    
-	
+	 <plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" source="npm" >
+        <variable  name="GOOGLE_API_KEY_FOR_ANDROID" value="{AIzaSyBp582ltJsDK7AM4XM3isxdgnvBTx5tn8w}"/>
+    </plugin> 
+	 <plugin name="phonegap-plugin-push" spec="~1.10.0">
+        <variable name="SENDER_ID" value="1:165870326014:android:e6f3af49d36e476c" />
+    </plugin>
     <!-- Plugins -->
   <platform name="android">
 	  <resource-file src="google-services.json" target="app/google-services.json" />

@@ -10,6 +10,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1, maximum-scale=1, viewport-fit=cover">     
         <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/colorchanges.js"></script>
 <!--         <script type="text/javascript" src="js/disfirstscreen.js"></script>-->
         <script type="text/javascript" src="js/Calendar-ui.js"></script>
@@ -76,7 +77,12 @@ cssFilesArr[x] = localStorage.ipadrs + "/themeCSS/" + cssFilesArr[x] + "?version
          var color = localStorage.themecolor;
          color = color.replace("%23","#");
          //confirm(color);
-         chnagecssnew(color);
+          try{
+           var appname=localStorage.appname;
+          if(appname=="dashboard"){
+                  chnagecssnew(color);
+        }
+            }catch(err){}
          //confirm(cssdata);
      }
  }catch(err){}
@@ -84,7 +90,13 @@ cssFilesArr[x] = localStorage.ipadrs + "/themeCSS/" + cssFilesArr[x] + "?version
 }
 
 $(document).ready(function () {
-                loadcssfiles(cssFilesArr);
+                
+				 try{
+           var appname=localStorage.appname;
+          if(appname=="dashboard"){
+                  loadcssfiles(cssFilesArr);
+        }
+            }catch(err){}
                 });
         </script>
         <script>

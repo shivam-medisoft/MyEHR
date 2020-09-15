@@ -13,6 +13,7 @@ and open the template in the editor.
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
      <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
       <script src="js/jquery-1.11.3.js" type="text/javascript"></script>
+	  <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/colorchanges.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet" type="text/css" />
@@ -67,13 +68,24 @@ cssFilesArr[x] = localStorage.ipadrs + "/themeCSS/" + cssFilesArr[x];
          var color = localStorage.themecolor;
          color = color.replace("%23","#");
          //confirm(color);
-         chnagecssnew(color);
+        try{
+           var appname=localStorage.appname;
+          if(appname=="dashboard"){
+             chnagecssnew(color);
+        }
+            }catch(err){}
          //confirm(cssdata);
      }
 }
 
             $(document).ready(function(){
-                 loadcssfiles(cssFilesArr);
+                
+				 try{
+           var appname=localStorage.appname;
+          if(appname=="dashboard"){
+              loadcssfiles(cssFilesArr);
+        }
+            }catch(err){}
          try{
                         if (localStorage.appname === 'fernandez'){
                             debugger;

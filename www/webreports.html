@@ -73,13 +73,24 @@ cssFilesArr[x] = localStorage.ipadrs + "/themeCSS/" + cssFilesArr[x];
          var color = localStorage.themecolor;
          color = color.replace("%23","#");
          //confirm(color);
-         chnagecssnew(color);
+         try{
+           var appname=localStorage.appname;
+          if(appname=="dashboard"){
+               chnagecssnew(color);
+        }
+            }catch(err){}
          //confirm(cssdata);
      }
 }
 
 $(document).ready(function () {
-                loadcssfiles(cssFilesArr);
+                
+				 try{
+           var appname=localStorage.appname;
+          if(appname=="dashboard"){
+              loadcssfiles(cssFilesArr);
+        }
+            }catch(err){}
                 });
         </script>
     </head>
