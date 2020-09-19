@@ -4,7 +4,6 @@
   "main": "myehr.html",
   "description": "Shivam My EHR APP",
   "dependencies": {
-  "cordova-android":"^8.0.0"
     "cordova-ios": "<6.0.0"
   },
   "devDependencies": {},
