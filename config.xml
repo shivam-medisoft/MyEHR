@@ -20,7 +20,7 @@
     <preference name="target-device" value="universal" />
     <preference name="prerendered-icon" value="true" />
 
- <preference name="fullscreen" value="true" />
+ <preference name="fullscreen" value="false" />
     <preference name="stay-in-webview" value="false" />
     <preference name="ios-statusbarstyle" value="black-opaque" />
      <preference name="StatusBarBackgroundColor" value="#31708F" />
@@ -43,7 +43,7 @@
     <preference name="DisallowOverscroll" value="true" />
      <plugin name="cordova.plugins.diagnostic" />
      <preference name="cordova.plugins.diagnostic.modules" value="LOCATION BLUETOOTH WIFI CAMERA NOTIFICATIONS MICROPHONE CONTACTS CALENDAR REMINDERS MOTION NFC EXTERNAL_STORAGE" />
-   
+   <preference name="KeyboardShrinksView" value="true" /> 
   <!-- Plugins -->
       <feature name="http://api.phonegap.com/1.0/file" />
 
