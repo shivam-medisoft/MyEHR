@@ -83,8 +83,8 @@ function getHttp(path) {
                     path = "http://" + path;
                 }  
                 }else{
-                if (path.indexOf("http://") == -1) {
-                    path = "http://" + path;
+               if (path.indexOf("https://") < 0) {
+                    path = "https://" + path;
                 }
             }
                 return path;
