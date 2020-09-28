@@ -53,7 +53,25 @@ function loginmethod() {
             }
         },
         error: function (jqXHR, exception) {
-            debugger;
+           var path1 = "https://"+path;
+            $.ajax({
+        url: getHttp(path1),
+        type: "GET",
+        success: function (data, textstatus, xhrreq) {
+            data = data.trim();
+            localStorage.isHttp = 0;
+            if (data.indexOf("frame src") > 0) {
+                debugger;
+                data = data.substring(data.indexOf("frame src")).replace('frame src="', "");
+                var dqts = data.indexOf('"');
+                var url = data.substring(0, dqts).trim();
+                insertData(loginname, getHttp(url));
+            } else {
+                insertData(loginname, getHttp(path));
+            }
+        },
+        error: function (jqXHR, exception) {
+debugger;
             var msg = '';
             if (jqXHR.status === 0) {
                 msg = 'Not connect to server.\n Verify Network or check url';
@@ -71,6 +89,11 @@ function loginmethod() {
                 msg = 'Uncaught Error.\n' + jqXHR.responseText;
             }
             alert(msg);
+}
+
+
+    });
+
             
         }
 
@@ -78,21 +101,19 @@ function loginmethod() {
     });
 }
 function getHttp(path) {
-    if(localStorage.isHttp == 1){
-        alert("localStorage.isHttp 1");
+                if(localStorage.isHttp == 1 || localStorage.isHttp == undefined){
                   if (path.indexOf("http://") < 0) {
-                       alert("http:// < 0");
                     path = "http://" + path;
-                      alert(path);
                 }  
                 }else{
-                     alert("not ishttp");
-               if (path.indexOf("https://") < 0) {
-                    alert("https:// < 0");
+                if (path.indexOf("https://") < 0) {
                     path = "https://" + path;
                 }
+
+// if (path.indexOf("http://") == -1) {
+//                    path = "http://" + path;
+//                }
             }
-    alert(path);
                 return path;
             }
 function queryDB(tx)
