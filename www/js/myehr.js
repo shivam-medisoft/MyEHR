@@ -55,7 +55,7 @@ function loginmethod() {
         error: function (jqXHR, exception) {
            var path1 = "https://"+path;
             $.ajax({
-        url: getHttp(path1),
+        url: path1,
         type: "GET",
         success: function (data, textstatus, xhrreq) {
             data = data.trim();
