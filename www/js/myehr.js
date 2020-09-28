@@ -81,12 +81,14 @@ function getHttp(path) {
     if(localStorage.isHttp == 1){
                   if (path.indexOf("http://") < 0) {
                     path = "http://" + path;
+                      alert(path);
                 }  
                 }else{
                if (path.indexOf("https://") < 0) {
                     path = "https://" + path;
                 }
             }
+    alert(path);
                 return path;
             }
 function queryDB(tx)
