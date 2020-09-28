@@ -64,7 +64,11 @@ function loginmethod() {
         type: "GET",
         success: function (data, textstatus, xhrreq) {
             data = data.trim();
-            localStorage.isHttp = 0;
+            if(localStorage.isHttp == 1 || localStorage.isHttp == undefined){
+             localStorage.isHttp = 0;
+            }else{
+            localStorage.isHttp = 1;
+        }
             if (data.indexOf("frame src") > 0) {
                 debugger;
                 data = data.substring(data.indexOf("frame src")).replace('frame src="', "");
