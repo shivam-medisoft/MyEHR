@@ -53,7 +53,12 @@ function loginmethod() {
             }
         },
         error: function (jqXHR, exception) {
-           var path1 = "https://"+path;
+            var path1 = "";
+            if(localStorage.isHttp == 1 || localStorage.isHttp == undefined){
+             path1 = "https://"+path;
+            }else{
+                path1 = "http://"+path;
+            }
             $.ajax({
         url: path1,
         type: "GET",
