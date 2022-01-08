@@ -172,7 +172,7 @@ function getAvalDates1(id){
                   }catch(err){}
           }
                 document.getElementById("mydiv").style.display="block";
-                $.get(path+'/TestingSchedule?patmobile='+patmobile+'&patilocid='+patselectedlocid+'&type=getavldates&webid='+webid+'&condition='+condition+'&colsqry='+colsqry+'&scrdata='+scrdata+'&fromdate='+fromdate+'&todate='+todate+'&mobile=1',function(responcejson){
+                $.get(path+'/TestingSchedule?patmobile='+encodeURIComponent(patmobile)+'&patilocid='+encodeURIComponent(patselectedlocid)+'&type=getavldates&webid='+webid+'&condition='+encodeURIComponent(condition)+'&colsqry='+encodeURIComponent(colsqry)+'&scrdata='+encodeURIComponent(scrdata)+'&fromdate='+encodeURIComponent(fromdate)+'&todate='+encodeURIComponent(todate)+'&mobile=1',function(responcejson){
                     debugger;
                     if(responcejson!="" && responcejson!=null){
                         var avldiv=document.getElementById("head3");
@@ -604,6 +604,8 @@ function getAvalDates1(id){
             }
             
             function chkmandatory(flg,exeqry){
+             debugger;
+            localStorage.drillwebchain = "1";
                 var path = localStorage.ipadrs;
                 var webid=document.getElementById("webid").value;
                 $.get(path+'/TestingSchedule?type=chkman&webid='+webid,function(responcejson){
