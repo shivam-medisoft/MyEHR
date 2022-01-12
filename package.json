@@ -1,6 +1,6 @@
 {
   "name": "myehr",
-  "version": "1.0.1",
+  "version": "3.7.0",
   "main": "myehr.html",
   "description": "Shivam My EHR APP",
   "dependencies": {
